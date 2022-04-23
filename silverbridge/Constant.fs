@@ -5,6 +5,10 @@ COPYRIGHT LESTER COVEY (me@lestercovey.ml),
 ***************************)
 module Constant
 type Strings =
+    static member Fatal = "FATAL: "
+    static member Success = "SUCCESS"
+    static member Authorizing = "Authorizing... "
+    static member FatalAuth = "Access denied"
     static member Welcome = "Welcome to Silverbridge\n"
     static member KeyPrompt = "Enter key: "
     static member EchoCommand = "echo"

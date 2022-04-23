@@ -14,4 +14,13 @@ Global
 		{03BD71DC-B4BF-475F-A1B9-ECF34F67FE2D}.Release|x86.ActiveCfg = Release|x86
 		{03BD71DC-B4BF-475F-A1B9-ECF34F67FE2D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.StandardHeader = $2
+		$0.VersionControlPolicy = $3
+		description = Client app to control Silverwing web server
+		version = 0.1.0
+	EndGlobalSection
 EndGlobal

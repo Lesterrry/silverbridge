@@ -1,8 +1,9 @@
 ﻿(***************************
 COPYRIGHT LESTER COVEY (me@lestercovey.ml),
-2021
+2022
 
 ***************************)
+
 open System
 open Constant
 open System.Net
@@ -41,11 +42,15 @@ let main argv =
     printf "%s" Strings.Authorizing
     if (makeRequest Strings.EchoCommand) = Strings.EchoCommand then
         printfn "%s" Strings.Success
+        printfn "%s" Strings.Welcome
     else
         die Strings.FatalAuth
-    while true do 
+    while true do
+        printf "%s" Strings.Prompt
         let s = Console.ReadLine()
-        printf "%s" s
-
-        Console.ResetColor()
+        if s = Strings.ExitInternalCommand then exit 0
+        let rs = (makeRequest s)
+        let out = 
+            if rs = "" then Strings.EmptyOutput; else rs
+        printfn "%s" out 
     0

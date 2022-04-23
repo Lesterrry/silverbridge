@@ -1,0 +1,1 @@
+﻿mono /Users/ajdarnasibullin/Projects/silverbridge/silverbridge/bin/Release/silverbridge.exe

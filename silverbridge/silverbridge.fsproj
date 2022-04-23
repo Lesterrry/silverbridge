@@ -42,12 +42,21 @@
     <Reference Include="FSharp.Core">
       <HintPath>..\packages\FSharp.Core.4.3.3\lib\net45\FSharp.Core.dll</HintPath>
     </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <None Include="packages.config" />
     <Compile Include="Constant.fs" />
     <Compile Include="Program.fs" />
+    <None Include="silverbridge.sh" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />
 </Project>
